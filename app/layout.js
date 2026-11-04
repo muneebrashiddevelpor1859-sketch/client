@@ -6,7 +6,7 @@ import { SITE } from '@/lib/data';
 
 export const metadata = {
   title: { default: 'Qazi Electro Paint Master | Paints and colour matching', template: '%s | Qazi Electro Paint Master' },
-  description: 'Interior, exterior, waterproofing and wood finishes with computer colour matching and delivery. Call 0325 4306247.',
+  description: 'Interior, exterior, waterproofing and wood finishes with computer colour matching and delivery.',
 };
 export const viewport = { width: 'device-width', initialScale: 1, viewportFit: 'cover' };
 
