@@ -4,7 +4,7 @@ import Backdrop from './Backdrop';
 export default function Hero() {
   return (
     <section className="hero">
-      <Backdrop video="/videos/6474084-uhd_3840_2160_25fps.mp4" priority />
+      <Backdrop video="/videos/91069-628462649_medium.mp4" priority />
       <div className="w hg">
         <div className="hero-copy">
           <h1>Colour with <em>character</em>, finished to perfection.</h1>

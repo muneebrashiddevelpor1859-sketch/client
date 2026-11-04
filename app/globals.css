@@ -135,7 +135,7 @@ footer small{display:block;margin-top:34px;padding-top:20px;border-top:1px solid
 .hero .btn:not(.o){background:var(--gl);color:var(--ink)}.hero .btn:not(.o):hover{background:#fff}
 .btn.o.lt,.hero .btn.o,.vband .btn.o{color:#fff;border-color:rgba(255,255,255,.75)}
 .hero .btn.o:hover,.vband .btn.o:hover{background:#fff;color:var(--ink)}
-.hero .shade-lin{background:rgba(0,0,0,.38)}
+.hero .shade-lin{background:rgba(0,0,0,.24)}
 .hero .shade-up{display:none}
 .pgh{position:relative;overflow:hidden;color:#fff;padding:calc(74px + env(safe-area-inset-top,0px) + 84px) 0 84px}
 .pgh .w{position:relative;z-index:2}
