@@ -135,8 +135,8 @@ footer small{display:block;margin-top:34px;padding-top:20px;border-top:1px solid
 .hero .btn:not(.o){background:var(--gl);color:var(--ink)}.hero .btn:not(.o):hover{background:#fff}
 .btn.o.lt,.hero .btn.o,.vband .btn.o{color:#fff;border-color:rgba(255,255,255,.75)}
 .hero .btn.o:hover,.vband .btn.o:hover{background:#fff;color:var(--ink)}
-.hero .shade-lin{background:linear-gradient(100deg,rgba(0,0,0,.6) 0%,rgba(0,0,0,.32) 48%,rgba(0,0,0,.1) 100%)}
-.hero .shade-up{background:linear-gradient(180deg,rgba(0,0,0,.32) 0%,rgba(0,0,0,0) 30%,rgba(0,0,0,.04) 72%,rgba(0,0,0,.28) 100%)}
+.hero .shade-lin{background:rgba(0,0,0,.38)}
+.hero .shade-up{display:none}
 .pgh{position:relative;overflow:hidden;color:#fff;padding:calc(74px + env(safe-area-inset-top,0px) + 84px) 0 84px}
 .pgh .w{position:relative;z-index:2}
 .pgh .w>*{animation:in .9s both}.pgh .w>:nth-child(2){animation-delay:.12s}.pgh .w>:nth-child(3){animation-delay:.22s}
@@ -146,6 +146,7 @@ footer small{display:block;margin-top:34px;padding-top:20px;border-top:1px solid
 .vband .btn:not(.o){background:var(--gl);color:var(--ink)}.vband .btn:not(.o):hover{background:#fff}
 .vband.short{padding:96px 0}.cta2{display:flex;justify-content:space-between;align-items:center;gap:28px;flex-wrap:wrap}.cta2 .lead{margin:0}.cta2 .acts{margin:0}
 @media (max-width:900px){.hd.clear .links a{color:var(--mu)}.hd.clear .links a.on{color:var(--goldt)}.vband{padding:90px 0}}
+@media (max-width:600px){.hero .bdi{inset:0}.hero .bgvid{object-position:center}}
 @media (prefers-reduced-motion:reduce){.bgvid{display:none}}
 
 /* Center section content and add subtle, accessible scroll reveals. */
