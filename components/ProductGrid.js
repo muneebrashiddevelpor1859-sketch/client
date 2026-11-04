@@ -11,7 +11,7 @@ export default function ProductGrid() {
       <div className="cat" role="group" aria-label="Filter products">
         {CATS.map(([k, t]) => <button key={k} className={c === k ? 'on' : ''} onClick={() => setC(k)}>{t}</button>)}
       </div>
-      <div className="grid" key={c}>{list.map((p, i) => <ProductCard key={p.n} p={p} i={i} />)}</div>
+      <div className="grid" key={c}>{list.map((p) => <ProductCard key={p.n} p={p} />)}</div>
     </>
   );
 }

@@ -3,14 +3,15 @@ import { useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 
 const SELECTOR = [
-  '.sec > .w > *:not(.rv)',
+  '.sec > .w > *:not(.rv):not(.grid):not(.fams):not(.pal):not(.steps)',
   '.two > *',
   '.cg > *',
-  '.quick > *',
-  '.grid > *:not(.rv):not(.card)',
-  '.fams > *:not(.rv)',
-  '.steps > *:not(.rv)',
-  '.pal > *:not(.rv)',
+  '.quick > .qk',
+  '.grid > .rv',
+  '.grid > .card',
+  '.fams > .rv',
+  '.steps > .rv',
+  '.pal > .rv',
   '.fg > *',
 ].join(',');
 
@@ -39,6 +40,10 @@ export default function ScrollMotion() {
       root.querySelectorAll?.(SELECTOR).forEach((el) => {
         if (!observed.has(el)) {
           observed.add(el);
+          const siblings = el.parentElement?.children;
+          if (siblings?.length > 1) {
+            el.style.setProperty('--motion-delay', `${Math.min(Array.prototype.indexOf.call(siblings, el) * 70, 350)}ms`);
+          }
           el.classList.add('motion-item');
           observer.observe(el);
         }
@@ -55,7 +60,10 @@ export default function ScrollMotion() {
     return () => {
       mutations.disconnect();
       observer.disconnect();
-      observed.forEach((el) => el.classList.remove('motion-item', 'motion-in'));
+      observed.forEach((el) => {
+        el.classList.remove('motion-item', 'motion-in');
+        el.style.removeProperty('--motion-delay');
+      });
       document.documentElement.classList.remove('motion-ready');
     };
   }, [pathname]);

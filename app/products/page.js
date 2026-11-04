@@ -6,7 +6,7 @@ export const metadata = { title: 'Products', description: 'Interior, exterior, w
 export default function Products() {
   return (
     <>
-      <PageHero title="Our paints" text="Choose by surface. Each product is matched with the right primer and finish." img="/images/room-terracotta.jpg" />
+      <PageHero title="Our paints" text="Choose by surface. Each product is matched with the right primer and finish." img="/images/images.jfif" />
       <section className="sec"><div className="w"><ProductGrid /></div></section>
     </>
   );

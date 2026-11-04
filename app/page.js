@@ -43,7 +43,7 @@ export default function Home() {
 
       <section className="sec alt"><div className="w">
         <Reveal><h2>Featured paints</h2><div className="rule" /><p className="lead">Popular choices for walls, roofs, wood and metal.</p></Reveal>
-        <div className="grid">{[0, 3, 5, 7].map((i, k) => <ProductCard key={i} p={PRODUCTS[i]} i={k} />)}</div>
+        <div className="grid">{[0, 3, 5, 7].map((i) => <ProductCard key={i} p={PRODUCTS[i]} />)}</div>
         <Reveal><p style={{ marginTop: 32 }}><Link className="btn o" href="/products">See all products</Link></p></Reveal>
       </div></section>
 
